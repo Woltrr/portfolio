@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/* portfolio styles */
+@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree');
+body {
+	font-family: 'Bai Jamjuree', sans-serif;
+}

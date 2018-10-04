@@ -1,6 +1,214 @@
 @charset "UTF-8";
-/* portfolio styles */
-@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree');
-body {
-	font-family: 'Bai Jamjuree', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+* {
+	margin: 0;
+	padding: 0;
 }
+
+/* portfolio styles */
+
+body {
+	font-family: 'Oswald', "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	background-color: #286DA8;
+}
+h1 {
+	text-align: center;
+	color: white;
+	font-size: 60pt;
+	font-weight: 500;
+}
+h3 {
+	text-align: center;
+	color: white;
+	font-size: 30pt;
+	font-weight: 500;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+nav li a {
+	display: block;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	float: left;
+}
+#top, #bottom, #left, #right {
+	background: white;
+	position: fixed;
+}
+#left, #right {
+	top: 0;
+	bottom: 0;
+	width: 15px;
+}
+#left {
+	left: 0;
+}
+#right {
+	right: 0;
+}
+#top, #bottom {
+	left: 0;
+	right: 0;
+	height: 15px;
+}
+#top {
+	top: 0;
+}
+#bottom {
+	bottom: 0;
+}
+.boxed {
+	border: 5px solid white;
+	text-align: center;
+	align-content: center;
+	margin: 50px 600px;
+	padding: 17px;
+}
+
+.projects {
+	color: white;
+}
+
+.kontakt_form {
+	text-align: center;
+}
+
+label {
+	color: white;
+}
+
+.left_content, .right_content {
+	float: left;
+	width: 50%;
+	margin-top: 50px;
+}
+
+.right_content {
+	text-align: left;
+}
+
+input[type="Text"] {
+	padding:10px;
+	width:175px;
+}
+
+.right_content textarea {
+	width:177px;
+	padding:10px;
+	height:100px;
+	resize:none;
+}
+
+input[type="submit"] {
+	padding:20px !important;
+}
+
+section {
+	width: 790px;
+	margin: 20px auto;
+	
+}
+
+label.input_contact:first-of-type {
+	margin:0;
+}
+
+label.input_contact {
+	margin-top:8px;
+	display:block;
+}
+
+.right_content input:first-of-type {
+	margin:0;
+}
+
+.right_content input, .right_content textarea {
+	margin-top:20px;
+}
+
+
+.free_art {
+	width:100%;
+}
+
+img {
+	margin-top: 50px;
+}
+
+.om_mig {
+	margin-top: 50px;
+	color: white;
+	column-count: 2;
+}
+
+nav a{
+  font-family: 'Oswald', sans-serif;
+  font-weight:500;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:#16151b;
+  margin:0 15px;
+  font-size:16px;
+  letter-spacing:1px;
+  position:relative;
+  display:inline-block;
+}
+nav a:before{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background:#16151b;
+  top:47%;
+  animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+nav a:hover:before{
+  animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+
+}
+@keyframes in{
+  0%{
+    width: 0;
+    left:0;
+    right:auto;
+  }
+  100%{
+    left:0;
+    right:auto;
+    width: 100%;
+  }
+}
+@keyframes out{
+  0%{
+    width:100%;
+    left: auto;
+    right: 0;
+  }
+  100%{
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+}
+@keyframes show{
+  0%{
+    opacity:0;
+    transform:translateY(-10px);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@for $i from 1 through 5 {
+  nav a:nth-child(#{$i}){
+    animation:show .2s #{$i*0.1+1}s ease 1 both;
+  }

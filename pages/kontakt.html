@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kontakt</title>
+<link href="../styles/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<div id="bottom"></div>
+<nav>
+  <ul>
+    <li><a href="../index.html">Hjem</a></li>
+    <li><a href="ommig.html">Om</a></li>
+    <li><a href="projekter.html">Projekter</a></li>
+    <li><a href="#">Kontakt</a></li>
+  </ul>
+</nav>
+	<section>
+<h1>Kontakt mig</h1>
+	
+<div class="kontakt_form">
+  <form action="/action_page.php">
+    <div class="left_content">
+      <label for="fname" class="input_contact">Navn</label><br />
+      <label for="lname" class="input_contact">Efternavn</label><br />
+      <label for="email" class="input_contact">Email</label><br />
+		<label for="text" class="input_contact">Besked</label>
+    </div>
+    <div class="right_content">
+      <input type="text" id="fname" name="navn" placeholder="Dit navn..">
+      <input type="text" id="lname" name="efternavn" placeholder="Dit efternavn..">
+		<input type="text" id="email" name="email" placeholder="Din email..">
+		<textarea name="comment" placeholder="Din besked.."></textarea><br />
+      <input type="submit" class="btn" value="Send">
+    </div>
+	</form>
+</div>
+	</section>	
+</body>
+</html>

@@ -65,7 +65,7 @@ nav li a {
 	bottom: 0;
 }
 .boxed {
-	border: 5px solid white;
+	border: 2px solid white;
 	text-align: center;
 	align-content: center;
 	margin: 4% 41%;
@@ -144,6 +144,9 @@ label.input_contact {
 
 img {
 	margin-top: 50px;
+	width: 800px;
+	padding:1px;
+    border:2px solid white;
 }
 
 .om_mig {
